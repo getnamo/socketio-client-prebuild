@@ -3,9 +3,10 @@ Derived from necessary bug-fixes and cmake pre-builds for VS2015 using boost 1.6
 
 Project contains include and lib for 32bit and 64bit dependencies.
 
+Socket.io C++ Client reference: https://github.com/socketio/socket.io-client-cpp
+
+Boost reference: http://www.boost.org/
+
 ##License
 MIT
 
-Socket.io C++ Client source available here: https://github.com/socketio/socket.io-client-cpp
-
-Boost available under boost license: http://www.boost.org/users/license.html
