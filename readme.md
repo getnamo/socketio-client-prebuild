@@ -5,3 +5,5 @@ Project contains include and lib for 32bit and 64bit dependencies.
 
 ##License
 MIT
+
+Boost available under boost license: http://www.boost.org/users/license.html
