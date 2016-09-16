@@ -1,3 +1,6 @@
 [submodule "src/boost"]
 	path = src/boost
 	url = https://github.com/boostorg/boost
+[submodule "src/socket.io-client-cpp"]
+	path = src/socket.io-client-cpp
+	url = https://github.com/getnamo/socket.io-client-cpp
