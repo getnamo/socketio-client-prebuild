@@ -3,7 +3,9 @@
 *.lo
 *.o
 *.obj
-Output
+
+#Output folder from generation
+#Output
 
 # Precompiled Headers
 *.gch
