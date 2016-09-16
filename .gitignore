@@ -5,7 +5,7 @@
 *.obj
 
 #Output folder from generation
-#Output
+Output
 
 # Precompiled Headers
 *.gch
