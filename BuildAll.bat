@@ -1,4 +1,6 @@
 call BuildBoost.bat
 cd ../..
-call MoveFiles.bat
+call MoveBoostFiles.bat
+cd ../..
+call BuildSocketIO.bat
 pause
