@@ -7,7 +7,7 @@ Socket.io C++ Client reference: https://github.com/socketio/socket.io-client-cpp
 
 Boost reference: http://www.boost.org/
 
-##Windows instructions for building
+## Windows instructions for building
 
 1) git clone --recurse-submodules
 
@@ -21,6 +21,6 @@ Boost reference: http://www.boost.org/
 
 6) All compiled things are found in Output
 
-##License
+## License
 MIT
 
