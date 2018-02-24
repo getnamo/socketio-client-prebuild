@@ -1,4 +1,4 @@
-# Socket IO C++ client prebuilds for VS2015
+# Socket IO C++ client library build scripts for various architectures
 Derived from necessary bug-fixes and cmake pre-builds for VS2015/2017 using boost 1.66.0 as dependency.
 
 Project contains include and lib for 32bit and 64bit dependencies.
