@@ -17,7 +17,7 @@ Boost reference: http://www.boost.org/
 
 4) when it's done run ```MoveBoostFiles.bat```
 
-5) download or move proper boost headers into ```{this dir}/src/socket.io-client-cpp/boost``` such that the folder is ```boost/boost```
+5) download or move proper boost headers into ```{this dir}/src/socket.io-client-cpp/boost``` such that the include folder is ```{this dir}/src/socket.io-client-cpp/boost/boost```
 
 6) run ```cmake_generate.bat``` to generate project files
 
