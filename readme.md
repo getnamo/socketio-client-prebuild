@@ -25,9 +25,9 @@ Boost reference: http://www.boost.org/
 
 8) Copy x64 platform config from x32
 
-9) remove Additional build settings for x64 platform (so that you don't get target machine mismatch error)
+9) Remove Additional build settings for x64 platform (so that you don't get target machine mismatch error)
 
-10) compile sioclient.lib all the configs required (32/64bit)
+10) Compile sioclient.lib all the configs required (32/64bit)
 
 11) Run MoveSocketFiles.bat
 
