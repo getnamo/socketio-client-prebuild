@@ -4,17 +4,17 @@ REM
 rem @echo off
 
 REM Please set boost directory
-SET boost=C:\dev\Boost
+SET boost=C:\Users\Admin\Documents\GitHub\socketio-client-prebuild\src\socket.io-client-cpp\boost
 REM Please set Unreal engine source directory
-SET UNREALROOT=C:/Users/Deams/Documents/GitHub/UnrealEngine
+SET UNREALROOT=C:/UnrealToolchain/UE4.19LinuxIncludes
 
-SET SIOROOT=%~dp0src\socket.io-client-cpp
+SET SIOROOT=%~dp0\..\src\socket.io-client-cpp
 SET SIOROOTLINUX=%SIOROOT:\=/%
 
 SET websocketIncludes=%SIOROOTLINUX%/lib/websocketpp
 SET rapidJsonIncludes=%SIOROOTLINUX%/lib/rapidjson/include
 
-SET LINUX_ROOT=C:\UE-Toolchain\v8_clang-3.9.0-centos7\x86_64-unknown-linux-gnu
+SET LINUX_ROOT=C:/UnrealToolchain/v11_clang-5.0.0-centos7/x86_64-unknown-linux-gnu
 SET Clang=%LINUX_ROOT%\bin\clang++.exe
 
 SET CustIncludes=-I%UNREALROOT%/Engine/Source/ThirdParty/Linux/LibCxx/include/ -I%UNREALROOT%/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1 -I%websocketIncludes% -I%rapidJsonIncludes% -I%boost%
