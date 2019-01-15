@@ -41,4 +41,5 @@ for %%a in (%socketIOFiles%) do call set "NewCommand=%%NewCommand%% %SIOROOTANDR
 @echo on
 
 ECHO LINKING STATIC LIBRARY
+%NDK_ROOT%/toolchains/arm-linux-androideabi-4.9/prebuilt/windows-x86_64/bin/arm-linux-androideabi-gcc-ar.exe cr %SIOROOTANDROID%/Android/libsioclient.a %NewCommand% 
 rem %NDK_ROOT%/toolchains/llvm/prebuilt/windows-x86_64/bin/x86_64-unknown-linux-gnu-ar.exe cr %SIOROOTLINUX%/Linux/libsioclient.a %NewCommand%
