@@ -3,21 +3,20 @@ REM Cross compile build script. Must be using a Developper command prompt
 REM
 rem @echo off
 
-REM Please set boost directory
-SET boost=C:\Users\Admin\Documents\GitHub\socketio-client-prebuild\src\socket.io-client-cpp\boost
 REM Please set Unreal engine source directory
-SET UNREALROOT=C:/UnrealToolchain/UE4.19LinuxIncludes
+SET UNREALROOT=C:/UnrealToolchain/UE4.21LinuxIncludes
 
 SET SIOROOT=%~dp0\..\src\socket.io-client-cpp
 SET SIOROOTLINUX=%SIOROOT:\=/%
 
+SET asioIncludes=%SIOROOTLINUX%/lib/asio/asio/include
 SET websocketIncludes=%SIOROOTLINUX%/lib/websocketpp
 SET rapidJsonIncludes=%SIOROOTLINUX%/lib/rapidjson/include
 
-SET LINUX_ROOT=C:/UnrealToolchain/v11_clang-5.0.0-centos7/x86_64-unknown-linux-gnu
+SET LINUX_ROOT=C:\UnrealToolchain\v12_clang-6.0.1-centos7/x86_64-unknown-linux-gnu
 SET Clang=%LINUX_ROOT%\bin\clang++.exe
 
-SET CustIncludes=-I%UNREALROOT%/Engine/Source/ThirdParty/Linux/LibCxx/include/ -I%UNREALROOT%/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1 -I%websocketIncludes% -I%rapidJsonIncludes% -I%boost%
+SET CustIncludes=-I%UNREALROOT%/Engine/Source/ThirdParty/Linux/LibCxx/include/ -I%UNREALROOT%/Engine/Source/ThirdParty/Linux/LibCxx/include/c++/v1 -I%websocketIncludes% -I%rapidJsonIncludes% -I%asioIncludes%
 
 SET socketIOFiles=sio_socket sio_client internal/sio_client_impl internal/sio_packet
 
